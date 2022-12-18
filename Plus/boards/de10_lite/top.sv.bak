@@ -1,7 +1,7 @@
 `define INTEL_VERSION
 `define CLK_FREQUENCY (50 * 1000 * 1000)
 
-`include "../../design/yrv_mcu.v"
+`include "yrv_mcu.v"
 
 module top
 (
