@@ -1,0 +1,196 @@
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name DEVICE 5CSXFC6D6F31C6
+set_global_assignment -name FAMILY "Cyclone V"
+
+set_global_assignment -name VERILOG_INPUT_VERSION SYSTEMVERILOG_2005
+
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+
+
+set_location_assignment PIN_AF14 -to max10_clk1_50
+set_location_assignment PIN_AA16 -to max10_clk2_50
+
+set_location_assignment PIN_AJ4 -to key[0]
+set_location_assignment PIN_AK4 -to key[1]
+
+set_location_assignment PIN_AB30 -to sw[0]
+set_location_assignment PIN_Y27 -to sw[1]
+set_location_assignment PIN_AB28 -to sw[2]
+set_location_assignment PIN_AC30 -to sw[3]
+set_location_assignment PIN_W25 -to sw[4]
+set_location_assignment PIN_V25 -to sw[5]
+set_location_assignment PIN_AC28 -to sw[6]
+set_location_assignment PIN_AD30 -to sw[7]
+set_location_assignment PIN_AC29 -to sw[8]
+set_location_assignment PIN_AA30 -to sw[9]
+
+set_location_assignment PIN_AA24 -to led[0]
+set_location_assignment PIN_AB23 -to led[1]
+set_location_assignment PIN_AC23 -to led[2]
+set_location_assignment PIN_AD24 -to led[3]
+set_location_assignment PIN_AG25 -to led[4]
+set_location_assignment PIN_AF25 -to led[5]
+set_location_assignment PIN_AE24 -to led[6]
+set_location_assignment PIN_AF24 -to led[7]
+set_location_assignment PIN_AB22 -to led[8]
+set_location_assignment PIN_AC22 -to led[9]
+
+set_location_assignment PIN_W17 -to hex0[0]
+set_location_assignment PIN_V18 -to hex0[1]
+set_location_assignment PIN_AG17 -to hex0[2]
+set_location_assignment PIN_AG16 -to hex0[3]
+set_location_assignment PIN_AH17 -to hex0[4]
+set_location_assignment PIN_AG18 -to hex0[5]
+set_location_assignment PIN_AH18 -to hex0[6]
+set_location_assignment PIN_AF16 -to hex1[0]
+set_location_assignment PIN_V16 -to hex1[1]
+set_location_assignment PIN_AE16 -to hex1[2]
+set_location_assignment PIN_AD17 -to hex1[3]
+set_location_assignment PIN_AE18 -to hex1[4]
+set_location_assignment PIN_AE17 -to hex1[5]
+set_location_assignment PIN_V17 -to hex1[6]
+set_location_assignment PIN_AA21 -to hex2[0]
+set_location_assignment PIN_AB17 -to hex2[1]
+set_location_assignment PIN_AA18 -to hex2[2]
+set_location_assignment PIN_Y17 -to hex2[3]
+set_location_assignment PIN_Y18 -to hex2[4]
+set_location_assignment PIN_AF18 -to hex2[5]
+set_location_assignment PIN_W16 -to hex2[6]
+set_location_assignment PIN_Y19 -to hex3[0]
+set_location_assignment PIN_W19 -to hex3[1]
+set_location_assignment PIN_AD19 -to hex3[2]
+set_location_assignment PIN_AA20 -to hex3[3]
+set_location_assignment PIN_AC20 -to hex3[4]
+set_location_assignment PIN_AA19 -to hex3[5]
+set_location_assignment PIN_AD20 -to hex3[6]
+set_location_assignment PIN_AD21 -to hex4[0]
+set_location_assignment PIN_AG22 -to hex4[1]
+set_location_assignment PIN_AE22 -to hex4[2]
+set_location_assignment PIN_AE23 -to hex4[3]
+set_location_assignment PIN_AG23 -to hex4[4]
+set_location_assignment PIN_AF23 -to hex4[5]
+set_location_assignment PIN_AH22 -to hex4[6]
+set_location_assignment PIN_AF21 -to hex5[0]
+set_location_assignment PIN_AG20 -to hex5[1]
+set_location_assignment PIN_AF20 -to hex5[2]
+set_location_assignment PIN_AG21 -to hex5[3]
+set_location_assignment PIN_AE19 -to hex5[4]
+set_location_assignment PIN_AF19 -to hex5[5]
+set_location_assignment PIN_AB21 -to hex5[6]
+
+
+# set_location_assignment PIN_U17  -to dram_addr[0]
+# set_location_assignment PIN_W19  -to dram_addr[1]
+# set_location_assignment PIN_V18  -to dram_addr[2]
+# set_location_assignment PIN_U18  -to dram_addr[3]
+# set_location_assignment PIN_U19  -to dram_addr[4]
+# set_location_assignment PIN_T18  -to dram_addr[5]
+# set_location_assignment PIN_T19  -to dram_addr[6]
+# set_location_assignment PIN_R18  -to dram_addr[7]
+# set_location_assignment PIN_P18  -to dram_addr[8]
+# set_location_assignment PIN_P19  -to dram_addr[9]
+# set_location_assignment PIN_T20  -to dram_addr[10]
+# set_location_assignment PIN_P20  -to dram_addr[11]
+# set_location_assignment PIN_R20  -to dram_addr[12]
+# set_location_assignment PIN_T21  -to dram_ba[0]
+# set_location_assignment PIN_T22  -to dram_ba[1]
+# set_location_assignment PIN_U21  -to dram_cas_n
+# set_location_assignment PIN_N22  -to dram_cke
+# set_location_assignment PIN_L14  -to dram_clk
+# set_location_assignment PIN_U20  -to dram_cs_n
+# set_location_assignment PIN_Y21  -to dram_dq[0]
+# set_location_assignment PIN_Y20  -to dram_dq[1]
+# set_location_assignment PIN_AA22 -to dram_dq[2]
+# set_location_assignment PIN_AA21 -to dram_dq[3]
+# set_location_assignment PIN_Y22  -to dram_dq[4]
+# set_location_assignment PIN_W22  -to dram_dq[5]
+# set_location_assignment PIN_W20  -to dram_dq[6]
+# set_location_assignment PIN_V21  -to dram_dq[7]
+# set_location_assignment PIN_P21  -to dram_dq[8]
+# set_location_assignment PIN_J22  -to dram_dq[9]
+# set_location_assignment PIN_H21  -to dram_dq[10]
+# set_location_assignment PIN_H22  -to dram_dq[11]
+# set_location_assignment PIN_G22  -to dram_dq[12]
+# set_location_assignment PIN_G20  -to dram_dq[13]
+# set_location_assignment PIN_G19  -to dram_dq[14]
+# set_location_assignment PIN_F22  -to dram_dq[15]
+# set_location_assignment PIN_V22  -to dram_ldqm
+# set_location_assignment PIN_U22  -to dram_ras_n
+# set_location_assignment PIN_J21  -to dram_udqm
+# set_location_assignment PIN_V20  -to dram_we_n
+
+# set_location_assignment PIN_AB16 -to gsensor_cs_n
+# set_location_assignment PIN_Y14  -to gsensor_int[1]
+# set_location_assignment PIN_Y13  -to gsensor_int[2]
+# set_location_assignment PIN_AB15 -to gsensor_sclk
+# set_location_assignment PIN_V11  -to gsensor_sdi
+# set_location_assignment PIN_V12  -to gsensor_sdo
+
+# set_location_assignment PIN_F16  -to arduino_reset_n
+# set_location_assignment PIN_AB5  -to arduino_io[0]
+# set_location_assignment PIN_AB6  -to arduino_io[1]
+# set_location_assignment PIN_AB7  -to arduino_io[2]
+# set_location_assignment PIN_AB8  -to arduino_io[3]
+# set_location_assignment PIN_AB9  -to arduino_io[4]
+# set_location_assignment PIN_Y10  -to arduino_io[5]
+# set_location_assignment PIN_AA11 -to arduino_io[6]
+# set_location_assignment PIN_AA12 -to arduino_io[7]
+# set_location_assignment PIN_AB17 -to arduino_io[8]
+# set_location_assignment PIN_AA17 -to arduino_io[9]
+# set_location_assignment PIN_AB19 -to arduino_io[10]
+# set_location_assignment PIN_AA19 -to arduino_io[11]
+# set_location_assignment PIN_Y19  -to arduino_io[12]
+# set_location_assignment PIN_AB20 -to arduino_io[13]
+# set_location_assignment PIN_AB21 -to arduino_io[14]
+# set_location_assignment PIN_AA20 -to arduino_io[15]
+
+set_location_assignment PIN_W15 -to gpio[0]
+set_location_assignment PIN_AK2 -to gpio[1]
+set_location_assignment PIN_Y16 -to gpio[2]
+set_location_assignment PIN_AK3 -to gpio[3]
+set_location_assignment PIN_AJ1 -to gpio[4]
+set_location_assignment PIN_AJ2 -to gpio[5]
+set_location_assignment PIN_AH2 -to gpio[6]
+set_location_assignment PIN_AH3 -to gpio[7]
+set_location_assignment PIN_AH4 -to gpio[8]
+set_location_assignment PIN_AH5 -to gpio[9]
+set_location_assignment PIN_AG1 -to gpio[10]
+set_location_assignment PIN_AG2 -to gpio[11]
+set_location_assignment PIN_AG3 -to gpio[12]
+set_location_assignment PIN_AG5 -to gpio[13]
+set_location_assignment PIN_AG6 -to gpio[14]
+set_location_assignment PIN_AG7 -to gpio[15]
+set_location_assignment PIN_AG8 -to gpio[16]
+set_location_assignment PIN_AF4 -to gpio[17]
+set_location_assignment PIN_AF5 -to gpio[18]
+set_location_assignment PIN_AF6 -to gpio[19]
+set_location_assignment PIN_AF8 -to gpio[20]
+set_location_assignment PIN_AF9 -to gpio[21]
+set_location_assignment PIN_AF10 -to gpio[22]
+set_location_assignment PIN_AE7 -to gpio[23]
+set_location_assignment PIN_AE9 -to gpio[24]
+set_location_assignment PIN_AE11 -to gpio[25]
+set_location_assignment PIN_AE12 -to gpio[26]
+set_location_assignment PIN_AD7 -to gpio[27]
+set_location_assignment PIN_AD9 -to gpio[28]
+set_location_assignment PIN_AD10 -to gpio[29]
+set_location_assignment PIN_AD11 -to gpio[30]
+set_location_assignment PIN_AD12 -to gpio[31]
+set_location_assignment PIN_AC9 -to gpio[32]
+set_location_assignment PIN_AC12 -to gpio[33]
+set_location_assignment PIN_AB12 -to gpio[34]
+set_location_assignment PIN_AA12 -to gpio[35]
+
+set_global_assignment -name LAST_QUARTUS_VERSION "19.1.0 Lite Edition"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE ../../design/display_static_digit.sv
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
