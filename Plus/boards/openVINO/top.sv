@@ -174,13 +174,15 @@ module top
     = slow_clk_mode ? hex_from_show_mode : hex_from_mcu;
 	 
   sm_hex_display_digit d1(
+   8'b00111111,
+	8'b00111111,
 	hex0,
 	hex1,
-	hex2,
 	max10_clk1_50,
 	first7Seg
   );
   sm_hex_display_digit d2(
+	hex2,
 	hex3,
 	hex4,
 	hex5,
