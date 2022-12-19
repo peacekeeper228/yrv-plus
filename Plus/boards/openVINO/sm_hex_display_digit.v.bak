@@ -1,0 +1,27 @@
+module sm_hex_display_digit
+
+input [6:0] gigitt,
+input [6:0] digit.
+
+input [6:0] digits,
+
+input clkin,
+
+) output reg 11:0] seven_segments
+reg [9:0] count = 10'b0000000000;
+always @(posedge clkIn)
+
+begin
+case(count [9:8])
+2°b00: Seven_segments = {1'bO, digit1[0], digit1[5], 2'bl1, digit1[1],
+A'bl, digitl[6], digit1[2], 1'bo, digiti{3], digit1[4]};
+2'bOl: seven_segments = {i'bi, digit2[0], digit2(5], 2°bo1, digit2[1],
+A'bl, digit2[6], digit2[2], 1'bo, ai git2t3l, saigieats]};
+2'b10: seven_segments = {1'bl, di gitgtol. di git3[5], 2*b1o, digit3[1],
+L'bi, digit3[6], digit3[2], 1°bo, Saigitatsy Sgigitsta]};
+default: count’ <= count + i'b1;
+endcase
+count <= count + 1'bi;
+end
+
+endmodule
